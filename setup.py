@@ -53,9 +53,17 @@ else:
         docstring = fh.read()
     packages = [b'html5print']           # without this setup will crash
 
-with open('requirements.txt') as fh:
-    requires = fh.read().splitlines()
-
+#with open('requirements.txt') as fh:
+#    requires = fh.read().splitlines()
+requires = [
+    'beautifulsoup4>=4.3.2',
+    'chardet>=2.2.1',
+    'html5lib>=0.999',
+    'requests>=2.3.5',
+    'slimit @git@https://github.com/rspivak/slimit.git@40956e7fc6e954b3e6d7b629faeb3303f5efb7ea',
+    'tinycss2>=0.4',
+    'ply==3.11'
+]
 
 class PyTest(TestCommand):
     user_options = [('pytest-args=', 'a',
