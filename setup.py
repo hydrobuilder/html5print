@@ -60,7 +60,7 @@ requires = [
     'chardet>=2.2.1',
     'html5lib>=0.999',
     'requests>=2.3.5',
-    'slimit @git@https://github.com/rspivak/slimit.git@40956e7fc6e954b3e6d7b629faeb3303f5efb7ea',
+    'slimit @git+https://github.com/rspivak/slimit.git@40956e7fc6e954b3e6d7b629faeb3303f5efb7ea',
     'tinycss2>=0.4',
     'ply==3.11'
 ]
